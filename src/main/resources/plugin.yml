@@ -1,10 +1,10 @@
 name: DragonRanks
 version: 0.1
 author: FluxCapacitor and skater77i
-main: Main
+main: me.fluxcapacitor.dragonranks.Main
 commands:
   dragonranks:
-    description: Main DragonRanks command.
+    description: me.fluxcapacitor.dragonranks.Main DragonRanks command.
     usage: /dragonranks [help|version]
     aliases: "dru"
   rankup:

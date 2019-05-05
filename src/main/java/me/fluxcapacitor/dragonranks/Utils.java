@@ -1,3 +1,5 @@
+package me.fluxcapacitor.dragonranks;
+
 import me.lucko.luckperms.LuckPerms;
 import me.lucko.luckperms.api.LuckPermsApi;
 import org.bukkit.ChatColor;

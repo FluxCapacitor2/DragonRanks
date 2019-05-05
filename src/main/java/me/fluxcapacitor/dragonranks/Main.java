@@ -1,3 +1,5 @@
+package me.fluxcapacitor.dragonranks;
+
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,7 +22,7 @@ public class Main extends JavaPlugin {
         Utils.log("Setting up economy...");
         RankupCommand.setupEconomy();
         Utils.log("Getting plugin info...");
-        //Add our plugin info (from plugin.yml) to Utils.pdf (for use in DragonRanksCommand & others)
+        //Add our plugin info (from plugin.yml) to me.fluxcapacitor.dragonranks.Utils.pdf (for use in me.fluxcapacitor.dragonranks.DragonRanksCommand & others)
         Utils.pdf = pdf;
         //Tell the console that it worked :D
         Utils.log("Plugin enabled.");

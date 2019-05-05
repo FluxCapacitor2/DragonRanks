@@ -1,3 +1,5 @@
+package me.fluxcapacitor.dragonranks;
+
 import me.lucko.luckperms.api.LuckPermsApi;
 import me.lucko.luckperms.api.Node;
 import net.milkbowl.vault.economy.Economy;
@@ -53,7 +55,7 @@ public class RankupCommand implements CommandExecutor {
                 Node node = api.getNodeFactory().newBuilder(permission).build();
                 api.getUser(uuid).setPermission(node);
 /*
-                permission = "worldguard.bypass." + Ladder.ladder[rankIndex + 1];
+                permission = "worldguard.bypass." + me.fluxcapacitor.dragonranks.Ladder.ladder[rankIndex + 1];
                 node = api.getNodeFactory().newBuilder(permission).build();
                 api.getUser(uuid).setPermission(node);*/
                 return 0;
@@ -82,7 +84,7 @@ public class RankupCommand implements CommandExecutor {
         //if (command.getName().equalsIgnoreCase("rankup")) {
         if (commandSender instanceof Player) {
             Player sender = (Player) commandSender;
-            //Utils.sendMessage(sender, ChatColor.AQUA + "Current rank: " + ChatColor.RESET + getCurrentRank((Player) sender));
+            //me.fluxcapacitor.dragonranks.Utils.sendMessage(sender, ChatColor.AQUA + "Current rank: " + ChatColor.RESET + getCurrentRank((Player) sender));
             int result = rankUp(sender);
             if (result == 0) {
                 Utils.sendMessage(sender, ChatColor.GREEN + "You have ranked up to " + getCurrentRank(sender) + " for " + econ.format(Ladder.costs[getRankIndex(getCurrentRank(sender)) - 1]) + "!");
