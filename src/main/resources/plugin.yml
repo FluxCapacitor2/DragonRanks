@@ -1,0 +1,21 @@
+name: DragonRanks
+version: 0.1
+author: FluxCapacitor and skater77i
+main: Main
+commands:
+  dragonranks:
+    description: Main DragonRanks command.
+    usage: /dragonranks [help|version]
+    aliases: "dru"
+  rankup:
+    description: Advance to the next rank, if you have the required balance.
+    usage: /rankup
+    aliases: "nextrank"
+  rank:
+    description: Check the rank of you or another player.
+    usage: /rank [name]
+    aliases: "checkrank"
+  ranks:
+    description: View all available ranks.
+    usage: /ranks
+    aliases: "ranklist"
